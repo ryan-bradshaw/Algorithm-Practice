@@ -25,7 +25,6 @@ let arr = [
 function diagonalDifference(arr){
     let upDown = 0
     let downUp = 0
-    let length = arr.length
     let upAxis = arr.length -1
 
     // console.log("testing : " + arr[2][2])
