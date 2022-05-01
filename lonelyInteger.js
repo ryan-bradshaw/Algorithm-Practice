@@ -13,7 +13,7 @@ function lonelyinteger(a){
     for(let i = 0; i < a.length; i++){ //this loop generates freq. table in object map
         map[a[i]] = (map[a[i]] || 0 ) + 1; 
     };
-    console.log(map) //working correctly
+    // console.log(map) //working correctly
 
     for(let key in map){
         if(map[key] == 1){
@@ -21,7 +21,7 @@ function lonelyinteger(a){
             unique = key
         }
     }
-    console.log(unique) //working correctly
+    // console.log(unique) //working correctly
     return unique
 }
 
