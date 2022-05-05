@@ -54,6 +54,7 @@ function isBadVersion(n, bad){
 console.log(isBadVersion(n, bad));
 
 //solution from platform in JAVA
+//----------------------------------------------------------------
 // public int firstBadVersion(int n) {
 //     int left = 1;
 //     int right = n;
