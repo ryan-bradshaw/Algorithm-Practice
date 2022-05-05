@@ -22,7 +22,7 @@
 // Then 4 is the first bad version.
 
 let n = 20
-let bad = 2
+let bad = 20
 
 function isBadVersion(n, bad){
     //use binary search to identify first instance of a bad version
@@ -31,8 +31,10 @@ function isBadVersion(n, bad){
     let right = n;
     while(left < right){
         let mid = Math.floor((left + right)/2);
-
-        if(bad == mid){
+        if(n == bad){
+            return n
+        }
+        else if(bad == mid){
             return mid;
         }
         else if(bad < mid){
@@ -50,3 +52,18 @@ function isBadVersion(n, bad){
 }
 
 console.log(isBadVersion(n, bad));
+
+//solution from platform in JAVA
+// public int firstBadVersion(int n) {
+//     int left = 1;
+//     int right = n;
+//     while (left < right) {
+//         int mid = left + (right - left) / 2;
+//         if (isBadVersion(mid)) {
+//             right = mid;
+//         } else {
+//             left = mid + 1;
+//         }
+//     }
+//     return left;
+// }
