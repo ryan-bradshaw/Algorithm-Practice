@@ -26,7 +26,8 @@ function binarySearch(nums, target){
             right = mid -1;
         }
         else if(target > nums[mid]){
-            left = mid +1;
+            left = mid +1; 
+
         }
     }
     return -1;
